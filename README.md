@@ -11,7 +11,7 @@
 
 | 题目                                                         | 题解                                                         | 难度 | 标签     | 时间 | 备注 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | -------- | ---- | ---- |
-| [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array) | [33. 搜索旋转排序数组](Note/Binary Search.md)                | 中等 | `二分法` |      |      |
+| [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array) | [33. 搜索旋转排序数组](Note/Binary%20Search.md)                | 中等 | `二分法` |      |      |
 | [300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence) | [300. 最长上升子序列](Note/Binary Search.md)                 | 中等 | `二分法` |      |      |
 | [704. 二分查找](https://leetcode-cn.com/problems/binary-search) | [704. 二分查找](Note/Binary Search.md)                       | 简单 | `二分法` |      |      |
 | [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx)     | [69. x 的平方根](Note/Binary Search.md)                      | 简单 | `二分法` |      |      |
