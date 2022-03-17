@@ -2,11 +2,11 @@
 
 | 题目                                                         | 题解                                                         | 难度 | 标签  | 时间      | 备注        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ----- | --------- | ----------- |
-| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [28. 实现strStr()](Note/String.md#28.%20实现strStr())        | 简单 | `KMP` | 2022.3.17 | 经典手撕KMP |
-| [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [459. 重复的子字符串](Note/String.md#459.%20重复的子字符串)  | 简单 | `KMP` | 2022.3.17 |             |
-| [214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/) | [214. 最短回文串](Note/String.md#214.%20最短回文串)          | 困难 | `KMP` | 2022.3.17 |             |
-| [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/) | [686. 重复叠加字符串匹配](Note/String.md#686.重复叠加字符串匹配) | 中等 | `KMP` | 2022.3.17 |             |
-| [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/) | [面试题 17.17. 多次搜索](Note/String.md#面试题%2017.17.%20多次搜索) | 中等 | `KMP` | 2022.3.17 |             |
+| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [28. 实现strStr()](Note/String.md#28-实现strStr())           | 简单 | `KMP` | 2022.3.17 | 经典手撕KMP |
+| [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [459. 重复的子字符串](Note/String.md#459-重复的子字符串)     | 简单 | `KMP` | 2022.3.17 |             |
+| [214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/) | [214. 最短回文串](Note/String.md#214-最短回文串)             | 困难 | `KMP` | 2022.3.17 |             |
+| [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/) | [686. 重复叠加字符串匹配](Note/String.md#686-重复叠加字符串匹配) | 中等 | `KMP` | 2022.3.17 |             |
+| [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/) | [面试题 17.17. 多次搜索](Note/String.md#面试题-1717-多次搜索) | 中等 | `KMP` | 2022.3.17 |             |
 
 
 
