@@ -2,11 +2,11 @@
 
 | 题目                                                         | 题解                                                         | 难度 | 标签  | 时间      | 备注        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ----- | --------- | ----------- |
-| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [28.实现strStr()](Note/String.md#28.实现strStr())            | 简单 | `KMP` | 2022.3.17 | 经典手撕KMP |
-| [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [459.重复的子字符串](Note/String.md#459.重复的子字符串)      | 简单 | `KMP` | 2022.3.17 |             |
-| [214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/) | [214. 最短回文串](Note/String.md#214. 最短回文串)            | 困难 | `KMP` | 2022.3.17 |             |
-| [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/) | [686. 重复叠加字符串匹配](Note/String.md#686. 重复叠加字符串匹配) | 中等 | `KMP` | 2022.3.17 |             |
-| [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/) | [面试题 17.17. 多次搜索](Note/String.md#面试题 17.17. 多次搜索) | 中等 | `KMP` | 2022.3.17 |             |
+| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [28. 实现strStr()](Note/String.md#28.%20实现strStr())        | 简单 | `KMP` | 2022.3.17 | 经典手撕KMP |
+| [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [459. 重复的子字符串](Note/String.md#459.%20重复的子字符串)  | 简单 | `KMP` | 2022.3.17 |             |
+| [214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/) | [214. 最短回文串](Note/String.md#214.%20最短回文串)          | 困难 | `KMP` | 2022.3.17 |             |
+| [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/) | [686. 重复叠加字符串匹配](Note/String.md#686.重复叠加字符串匹配) | 中等 | `KMP` | 2022.3.17 |             |
+| [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/) | [面试题 17.17. 多次搜索](Note/String.md#面试题%2017.17.%20多次搜索) | 中等 | `KMP` | 2022.3.17 |             |
 
 
 
@@ -14,7 +14,6 @@
 
 | 题目                                                         | 题解                                                         | 难度 | 标签     | 时间 | 备注 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | -------- | ---- | ---- |
-<<<<<<< HEAD
 | [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array) | [33. 搜索旋转排序数组](Note/Binary%20Search.md)              | 中等 | `二分法` |      |      |
 | [300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence) | [300. 最长上升子序列](Note/Binary%20Search.md)               | 中等 | `二分法` |      |      |
 | [704. 二分查找](https://leetcode-cn.com/problems/binary-search) | [704. 二分查找](Note/Binary%20Search.md)                     | 简单 | `二分法` |      |      |
@@ -25,7 +24,6 @@
 | [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array) | [153. 寻找旋转排序数组中的最小值](Note/Binary%20Search.md)   | 中等 | `二分法` |      |      |
 | [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii) | [240. 搜索二维矩阵 II](Note/Binary%20Search.md)              | 中等 | `二分法` |      |      |
 | [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element) | [162. 寻找峰值](Note/Binary%20Search.md)                     | 中等 | `二分法` |      |      |
-=======
 | [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array) | [33. 搜索旋转排序数组](Note/Binary%20Search.md)                | 中等 | `二分法` |      |      |
 | [300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence) | [300. 最长上升子序列](Note/Binary Search.md)                 | 中等 | `二分法` |      |      |
 | [704. 二分查找](https://leetcode-cn.com/problems/binary-search) | [704. 二分查找](Note/Binary Search.md)                       | 简单 | `二分法` |      |      |
@@ -36,9 +34,9 @@
 | [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array) | [153. 寻找旋转排序数组中的最小值](Note/Binary Search.md)     | 中等 | `二分法` |      |      |
 | [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii) | [240. 搜索二维矩阵 II](Note/Binary Search.md)                | 中等 | `二分法` |      |      |
 | [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element) | [162. 寻找峰值](Note/Binary Search.md)                       | 中等 | `二分法` |      |      |
->>>>>>> 2c1fe15a959ba655258d8dac1f76daa9370eb412
 
 
+------
 
 ## 链表
 

@@ -1,12 +1,12 @@
 # 字符串
 
-| 题目                                                         | 题解                                                | 难度 | 标签  | 时间      | 备注        |
-| ------------------------------------------------------------ | --------------------------------------------------- | ---- | ----- | --------- | ----------- |
-| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [28.实现strStr()](#28.实现strStr())                 | 简单 | `KMP` | 2022.3.17 | 经典手撕KMP |
-| [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [459.重复的子字符串](#459.重复的子字符串)           | 简单 | `KMP` | 2022.3.17 |             |
-| [214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/) | [214. 最短回文串](#214. 最短回文串)                 | 困难 | `KMP` | 2022.3.17 |             |
-| [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/) | [686. 重复叠加字符串匹配](#686. 重复叠加字符串匹配) | 中等 | `KMP` | 2022.3.17 |             |
-| [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/) | [面试题 17.17. 多次搜索](#面试题 17.17. 多次搜索)   | 中等 | `KMP` | 2022.3.17 |             |
+| 题目                                                         | 题解                                                  | 难度 | 标签  | 时间      | 备注        |
+| ------------------------------------------------------------ | ----------------------------------------------------- | ---- | ----- | --------- | ----------- |
+| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [28.实现strStr()](#28.%20实现strStr())                | 简单 | `KMP` | 2022.3.17 | 经典手撕KMP |
+| [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [459. 重复的子字符串](#459.%20重复的子字符串)         | 简单 | `KMP` | 2022.3.17 |             |
+| [214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/) | [214. 最短回文串](#214.%20最短回文串)                 | 困难 | `KMP` | 2022.3.17 |             |
+| [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/) | [686. 重复叠加字符串匹配](#686.%20重复叠加字符串匹配) | 中等 | `KMP` | 2022.3.17 |             |
+| [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/) | [面试题 17.17. 多次搜索](#面试题%2017.17.%20多次搜索) | 中等 | `KMP` | 2022.3.17 |             |
 
 
 
@@ -14,7 +14,7 @@
 
 在字符串匹配问题中，如果使用暴力法，对主串的每一个字符都作为匹配的字符串的开头来考虑，那么平均时间复杂度会达到`O(n^2)`。
 
-![Snipaste_2022-03-16_21-01-44](..\images\Snipaste_2022-03-16_21-01-44.png)
+![Snipaste_2022-03-16_21-01-44](../images/Snipaste_2022-03-16_21-01-44.png)
 
 为了能够用`O(n)`的时间复杂度来解决字符串匹配问题，就要使用KMP算法。
 
@@ -150,7 +150,9 @@ public int[] getNextArray(char[] match) {
 
 ------
 
-## [28.实现strStr()](https://leetcode-cn.com/problems/implement-strstr/)
+## 28. 实现strStr()
+
+[28. 实现strStr()](https://leetcode-cn.com/problems/implement-strstr/)
 
 虽然这是一道简单题可以直接暴力模拟，但是时间复杂度就会达到O(MN)，所以用KMP来达到O(N)的程度。
 
@@ -205,7 +207,9 @@ public int[] getNextArray(String match) {
 
 ------
 
-## [459.重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
+## 459. 重复的子字符串
+
+[459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
 
 因为刚学了`KMP`，所以想着也用`KMP`来解决吧。
 
@@ -262,7 +266,9 @@ public boolean kmp(String str,String match){
 
 ------
 
-## [214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/)
+## 214. 最短回文串
+
+[214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/)
 
 要构成回文串，最傻逼的方式就是把字符串倒过来然后接到前面去，但是这样难以满足’最短‘。
 
@@ -329,7 +335,9 @@ public int[] getNextArray(char[] match){
 
 ------
 
-## [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/)
+## 686. 重复叠加字符串匹配
+
+[686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/)
 
 同样用KMP算法。
 
@@ -396,7 +404,9 @@ public int[] getNextArray(String match){
 
 ------
 
-## [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/)
+## 面试题 17.17. 多次搜索
+
+[面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/)
 
 同样使用KMP算法，对于每一个搜索到匹配的开始下标之后，再从这个下标的下一个位置开始搜索。
 
