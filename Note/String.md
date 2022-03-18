@@ -2,7 +2,7 @@
 
 | 题目                                                         | 题解                                               | 难度 | 标签  | 时间      | 备注        |
 | ------------------------------------------------------------ | -------------------------------------------------- | ---- | ----- | --------- | ----------- |
-| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [28.实现strStr()](#28-实现strStr())                | 简单 | `KMP` | 2022.3.17 | 经典手撕KMP |
+| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [28.实现strStr()](#28-实现strStr)                  | 简单 | `KMP` | 2022.3.17 | 经典手撕KMP |
 | [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [459. 重复的子字符串](#459-重复的子字符串)         | 简单 | `KMP` | 2022.3.17 |             |
 | [214. 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/) | [214. 最短回文串](#214-最短回文串)                 | 困难 | `KMP` | 2022.3.17 |             |
 | [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/) | [686. 重复叠加字符串匹配](#686-重复叠加字符串匹配) | 中等 | `KMP` | 2022.3.17 |             |
@@ -223,40 +223,42 @@ public int[] getNextArray(String match) {
 
 ```Java
 public boolean repeatedSubstringPattern(String s) {
-    return kmp(s+s,s);
+    return kmp(s + s, s);
 }
+
 public int[] getNextArray(char[] match) {
-    if(match.length==1) return new int[]{-1};
+    if (match.length == 1) return new int[]{-1};
     int[] next = new int[match.length];
     int i = 2;
     int x = 0;
-    while(i<match.length){
-        if(match[i-1]==match[x]){
+    while (i < match.length) {
+        if (match[i - 1] == match[x]) {
             next[i++] = ++x;
-        }else if(x>0){
+        } else if (x > 0) {
             x = next[x];
-        }else{
+        } else {
             next[i++] = 0;
         }
     }
     return next;
 }
-public boolean kmp(String str,String match){
+
+public boolean kmp(String str, String match) {
     char[] pattern = match.toCharArray();
     int[] next = getNextArray(pattern);
     int i = 1, j = 0;
     // i 范围为 1~str.length-1
-    while(i<str.length()-1&&j<match.length()){
-        if(str.charAt(i)==match.charAt(j)){
+    while (i < str.length() - 1 && j < match.length()) {
+        if (str.charAt(i) == match.charAt(j)) {
             i++;
             j++;
-        }else if(j==0){
+        } else if (j == 0) {
             i++;
-        }else{
+        } else {
             j = next[j];
         }
     }
-    return j==match.length();
+    return j == match.length();
 }
 ```
 
@@ -346,43 +348,45 @@ public int[] getNextArray(char[] match){
 ### 代码实现
 
 ```Java
-public int repeatedStringMatch(String a,String b){
-    return getCnt(a,b);
+public int repeatedStringMatch(String a, String b) {
+    return getIndexOf(a, b);
 }
-public int getCnt(String str,String match){
+
+public int getIndexOf(String str, String match) {
     int[] next = getNextArray(match);
     int i = 0, j = 0;
     int cnt = 1;
-    while(cnt<match.length()/str.length()+3&&j<match.length()){
-        if(str.charAt(i)==match.charAt(j)){
+    while (cnt < match.length() / str.length() + 3 && j < match.length()) {
+        if (str.charAt(i) == match.charAt(j)) {
             i++;
             j++;
-        }else if(j==0){
-            if(cnt>1) return -1;
+        } else if (j == 0) {
             i++;
-        }else{
+        } else {
             j = next[j];
         }
-        if(i==str.length()&&j<match.length()) {
-            i = 0;
+        if (j == 0 && cnt > 1) return -1;
+        if (i == str.length() && j < match.length()) {
+            i = str.length();
             cnt++;
         }
     }
-    return j==match.length()?cnt:-1;
+    return cnt;
 }
-public int[] getNextArray(String match){
-    if(match.length()==1) return new int[]{-1};
+
+public int[] getNextArray(String match) {
+    if (match.length() == 1) return new int[]{-1};
     int[] next = new int[match.length()];
     next[0] = -1;
     next[1] = 0;
     int i = 2;
     int x = 0;
-    while(i<match.length()){
-        if(match.charAt(i-1)==match.charAt(x)){
+    while (i < match.length()) {
+        if (match.charAt(i - 1) == match.charAt(x)) {
             next[i++] = ++x;
-        }else if(x>0){
+        } else if (x > 0) {
             x = next[x];
-        }else{
+        } else {
             next[i++] = 0;
         }
     }
@@ -413,53 +417,55 @@ public int[] getNextArray(String match){
 ### 代码实现
 
 ```Java
-public int[][] multiSearch(String big, String[] smalls){
+public int[][] multiSearch(String big, String[] smalls) {
     int[][] ans = new int[smalls.length][];
-    for(int i=0;i<smalls.length;i++){
+    for (int i = 0; i < smalls.length; i++) {
         ans[i] = getIndexOf(big, smalls[i]);
     }
     return ans;
 }
-public int[] getNextArray(String match){
-    if(match.length()==1) return new int[]{-1};
+
+public int[] getNextArray(String match) {
+    if (match.length() == 1) return new int[]{-1};
     int[] next = new int[match.length()];
     next[0] = -1;
     next[1] = 0;
     int i = 2;
     int x = 0;
-    while(i< match.length()){
-        if(match.charAt(i-1)==match.charAt(x)){
+    while (i < match.length()) {
+        if (match.charAt(i - 1) == match.charAt(x)) {
             next[i++] = ++x;
-        }else if(x>0){
+        } else if (x > 0) {
             x = next[x];
-        }else{
+        } else {
             next[i++] = 0;
         }
     }
     return next;
 }
-public int[] getIndexOf(String str,String match){
-    if(match.length()==0) return new int[0];
+
+public int[] getIndexOf(String str, String match) {
+    if (match.length() == 0) return new int[0];
     List<Integer> ans = new ArrayList<>();
     int[] next = getNextArray(match);
     int i = 0, j = 0;
-    while(i<str.length()){
-        if(str.charAt(i)==match.charAt(j)){
+    while (i < str.length()) {
+        if (str.charAt(i) == match.charAt(j)) {
             i++;
             j++;
-        }else if(j==0){
+        } else if (j == 0) {
             i++;
-        }else{
+        } else {
             j = next[j];
         }
-        if(j==match.length()){
-            ans.add(i-j);
-            i = i-j+1;
+        if (j == match.length()) {
+            ans.add(i - j);
+            i = i - j + 1;
             j = 0;
         }
     }
     int[] res = new int[ans.size()];
-    for(i=0;i<ans.size();i++) res[i] = ans.get(i);
+    for (i = 0; i < ans.size(); i++) res[i] = ans.get(i);
     return res;
 }
 ```
