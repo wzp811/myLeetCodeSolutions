@@ -20,32 +20,27 @@
 | [300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence) | [300. 最长上升子序列](Note/Binary%20Search.md#300-最长上升子序列) | 中等 | `二分法` | 2022-3-18 |          |
 | [704. 二分查找](https://leetcode-cn.com/problems/binary-search) | [704. 二分查找](Note/Binary%20Search.md#704-二分查找)        | 简单 | `二分法` | 2022-3-18 | 经典二分 |
 | [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx)     | [69. x 的平方根](Note/Binary%20Search.md#69-x的平方根)       | 简单 | `二分法` | 2022-3-18 |          |
-| [4. 寻找两个正序数组的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays) | [4. 寻找两个正序数组的中位数](Note/Binary%20Search.md#4-寻找两个正序数组的中位数) | 困难 | `二分法` |           |          |
-| [718. 最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray) | [718. 最长重复子数组](Note/Binary%20Search.md#718-最长重复子数组) | 中等 | `二分法` |           |          |
 | [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array) | [34. 在排序数组中查找元素的第一个和最后一个位置](Note/Binary%20Search.md#34-在排序数组中查找元素的第一个和最后一个位置) | 中等 | `二分法` | 2022-3-18 |          |
-| [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array) | [153. 寻找旋转排序数组中的最小值](Note/Binary%20Search.md#153-寻找旋转排序数组中的最小值) | 中等 | `二分法` |           |          |
-| [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii) | [240. 搜索二维矩阵 II](Note/Binary%20Search.md#240-搜索二维矩阵) | 中等 | `二分法` |           |          |
-| [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element) | [162. 寻找峰值](Note/Binary%20Search.md#162-寻找峰值)        | 中等 | `二分法` |           |          |
 
 
 
 
 ------
 
-## 链表
+## [链表](Note/Linked%20List.md)
 
-| 题目                                                         | 题解 | 难度 | 标签 | 时间 | 备注 |
-| ------------------------------------------------------------ | ---- | ---- | ---- | ---- | ---- |
-| [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list) |      |      |      |      |      |
-| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group) |      |      |      |      |      |
-| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists) |      |      |      |      |      |
-| [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle) |      |      |      |      |      |
-| [160. 相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists) |      |      |      |      |      |
-| [23. 合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists) |      |      |      |      |      |
-| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii) |      |      |      |      |      |
-| [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii) |      |      |      |      |      |
-| [143. 重排链表](https://leetcode-cn.com/problems/reorder-list) |      |      |      |      |      |
-| [19. 删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) |      |      |      |      |      |
+| 题目                                                         | 题解                                                         | 难度 | 标签     | 时间      | 备注 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | -------- | --------- | ---- |
+| [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list) | [206. 反转链表](Note/Linked%20List.md/#206-反转链表)         | 简单 |          | 2022-3-19 |      |
+| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group) | [25. K 个一组翻转链表](Note/Linked%20List.md/#25-K个一组翻转链表) | 困难 |          | 2022-3-19 |      |
+| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists) | [21. 合并两个有序链表](Note/Linked%20List.md/#21-合并两个有序链表) | 简单 |          | 2022-3-19 |      |
+| [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle) | [141. 环形链表](Note/Linked%20List.md/#141-环形链表)         | 简单 | 快慢指针 | 2022-3-19 |      |
+| [160. 相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists) | [160. 相交链表](Note/Linked%20List.md/#160-相交链表)         | 简单 |          | 2022-3-19 |      |
+| [23. 合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists) |                                                              |      |          |           |      |
+| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii) |                                                              |      |          |           |      |
+| [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii) |                                                              |      |          |           |      |
+| [143. 重排链表](https://leetcode-cn.com/problems/reorder-list) |                                                              |      |          |           |      |
+| [19. 删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) |                                                              |      |          |           |      |
 
 
 
