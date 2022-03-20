@@ -1,17 +1,17 @@
 # 链表
 
-| 题目                                                         | 题解                                         | 难度 | 标签     | 时间      | 备注 |
-| ------------------------------------------------------------ | -------------------------------------------- | ---- | -------- | --------- | ---- |
-| [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list) | [206. 反转链表](#206-反转链表)               | 简单 |          | 2022-3-19 |      |
-| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group) | [25. K 个一组翻转链表](#25-K个一组翻转链表)  | 困难 |          | 2022-3-19 |      |
-| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists) | [21. 合并两个有序链表](#21-合并两个有序链表) | 简单 |          | 2022-3-19 |      |
-| [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle) | [141. 环形链表](#141-环形链表)               | 简单 | 快慢指针 | 2022-3-19 |      |
-| [160. 相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists) | [160. 相交链表](#160-相交链表)               | 简单 |          | 2022-3-19 |      |
-| [23. 合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists) |                                              |      |          |           |      |
-| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii) |                                              |      |          |           |      |
-| [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii) |                                              |      |          |           |      |
-| [143. 重排链表](https://leetcode-cn.com/problems/reorder-list) |                                              |      |          |           |      |
-| [19. 删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) |                                              |      |          |           |      |
+| 题目                                                         | 题解                                                       | 难度 | 标签     | 时间      | 备注 |
+| ------------------------------------------------------------ | ---------------------------------------------------------- | ---- | -------- | --------- | ---- |
+| [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list) | [206. 反转链表](#206-反转链表)                             | 简单 |          | 2022-3-19 |      |
+| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group) | [25. K 个一组翻转链表](#25-K个一组翻转链表)                | 困难 |          | 2022-3-19 |      |
+| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists) | [21. 合并两个有序链表](#21-合并两个有序链表)               | 简单 |          | 2022-3-19 |      |
+| [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle) | [141. 环形链表](#141-环形链表)                             | 简单 | 快慢指针 | 2022-3-19 |      |
+| [160. 相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists) | [160. 相交链表](#160-相交链表)                             | 简单 |          | 2022-3-19 |      |
+| [23. 合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists) | [23. 合并K个排序链表](#23-合并K个排序链表)                 | 困难 |          | 2022-3-20 |      |
+| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii) | [92. 反转链表 II](#92-反转链表)                            | 中等 |          | 2022-3-20 |      |
+| [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii) | [142. 环形链表 II](#142-环形链表)                          | 中等 |          | 2022-3-20 |      |
+| [143. 重排链表](https://leetcode-cn.com/problems/reorder-list) | [143. 重排链表](#143-重排链表)                             | 中等 |          | 2022-3-20 |      |
+| [19. 删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) | [19. 删除链表的倒数第N个节点](#19-删除链表的倒数第N个节点) | 中等 |          | 2022-3-20 |      |
 
 ## 206. 反转链表
 
@@ -183,3 +183,154 @@ public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 }
 ```
 
+
+
+## 23. 合并K个排序链表
+
+用归并排序
+
+```Java
+public ListNode mergeKLists(ListNode[] lists) {
+    if (lists.length < 1) return null;
+    else if (lists.length == 1) return lists[0];
+    return mergeKLists(lists, 0, lists.length - 1);
+}
+
+public ListNode mergeKLists(ListNode[] lists, int left, int right) {
+    if (left + 1 == right) {
+        return merge(lists[left], lists[right]);
+    } else if (left + 1 < right) {
+        int mid = left + ((right - left) >> 1);
+        return merge(mergeKLists(lists, left, mid), mergeKLists(lists, mid + 1, right));
+    } else {
+        return lists[left];
+    }
+}
+
+public ListNode merge(ListNode l1, ListNode l2) {
+    ListNode ans = new ListNode();
+    ListNode res = ans;
+    while (l1 != null && l2 != null) {
+        if (l1.val < l2.val) {
+            ans.next = l1;
+            l1 = l1.next;
+        } else {
+            ans.next = l2;
+            l2 = l2.next;
+        }
+        ans = ans.next;
+    }
+    ans.next = l1 == null ? l2 : l1;
+    return res.next;
+}
+```
+
+
+
+## 92. 反转链表
+
+模拟，用一个辅助头节点来避免从第一个节点就开始翻转的情况
+
+```Java
+public ListNode reverseBetween(ListNode head, int left, int right) {
+    if (left == right) return head;
+    ListNode res = new ListNode();
+    res.next = head;
+    ListNode begin = res;
+    for (int i = 0; i < left - 1; i++) {
+        begin = begin.next;
+    }
+    ListNode cur = begin.next;
+    ListNode last = null;
+
+    for (int i = 0; i <= right - left; i++) {
+        ListNode next = cur.next;
+        cur.next = last;
+        last = cur;
+        cur = next;
+    }
+    begin.next.next = cur;
+    begin.next = last;
+    return res.next;
+}
+```
+
+## 142. 环形链表
+
+快慢指针确认有环，有环的情况下第一次相遇的时候，让其中一个指针重新指向头节点，然后接下来快慢指针都同时走一步，再次相遇就是环入口。
+
+```Java
+public ListNode detectCycle(ListNode head) {
+    if(head==null||head.next==null) return null;
+    ListNode slow = head.next;
+    ListNode fast = head.next.next;
+    while(fast!=slow){
+        if(fast==null||fast.next==null) return null;
+        fast = fast.next.next;
+        slow = slow.next;
+    }
+    fast = head;
+    while(fast!=slow){
+        fast = fast.next;
+        slow = slow.next;
+    }
+    return fast;
+}
+```
+
+## 143. 重排链表
+
+用栈按顺序压入所有节点，再重新遍历头节点一个一个接上去。
+
+```Java
+public void reorderListStack(ListNode head) {
+    if (head.next == null) return;
+    Stack<ListNode> stack = new Stack<>();
+    ListNode cur = head;
+    while (cur != null) {
+        stack.push(cur);
+        cur = cur.next;
+    }
+    cur = head;
+    while (cur != stack.peek() && cur.next != stack.peek()) {
+        // !!!
+        ListNode order = stack.pop();
+        ListNode next = cur.next;
+        cur.next = order;
+        order.next = next;
+        cur = next;
+    }
+    cur = stack.pop();
+    cur.next = null;
+}
+```
+
+还有更优的办法，先用快慢指针把链表分成两半。然后对后面那一半进行链表反转，再合并两个链表。
+
+这个做法要注意`next`值的链接，不然很容易出现接错成环了。
+
+例如上面最后一个`while`循环，不仅要备份前半部分节点的`next`，还要备份后半部分节点的`next`。
+
+## 19. 删除链表的倒数第N个节点
+
+之前做过，之前的做法就是先找到倒数第N个节点，然后再重新遍历删掉这个节点。这种做法的好处是比较好操作删除节点为头节点的情况。
+
+后面题意说进阶做法是用一次遍历的做法，其实和前一种做法大同小异。
+
+```Java
+public ListNode removeNthFromEnd(ListNode head, int n) {
+    ListNode res = new ListNode();
+    res.next = head;
+    ListNode cur = res;
+    ListNode helper = res;
+    while (cur.next != null) {
+        n--;
+        if (n < 0) helper = helper.next;
+        cur = cur.next;
+    }
+    helper.next = helper.next.next;
+    return res.next;
+}
+```
+
+不过要注意，最好用一个辅助头节点，也比较好操作。
