@@ -58,18 +58,18 @@
 
 ## [排序](Note/Sort.md)
 
-| 题目                                                         | 题解                                              | 难度 | 标签 | 时间      | 备注                                           |
-| ------------------------------------------------------------ | ------------------------------------------------- | ---- | ---- | --------- | ---------------------------------------------- |
-| [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/) | [912. 排序数组](Note/Sort.md#912-排序数组)        | 中等 |      | 2022-3-22 | 手撕快速排序<br />手撕堆排序<br />手撕归并排序 |
-| [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals) | [56. 合并区间](Note/Sort.md#56-合并区间)          | 中等 |      | 2022-3-22 |                                                |
-| [面试题 17.14. 最小K个数](https://leetcode-cn.com/problems/smallest-k-lcci/) | [面试题 17.14. 最小K个数](Note/Sort.md#最小K个数) | 中等 |      | 2022-3-22 |                                                |
-| [179. 最大数](https://leetcode-cn.com/problems/largest-number) | [179. 最大数](Note/Sort.md#179-最大数)            | 中等 |      | 2022-3-22 |                                                |
-| [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors) | [75. 颜色分类](Note/Sort.md#75-颜色分类)          | 中等 |      | 2022-3-22 |                                                |
-| [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays) |                                                   |      |      |           |                                                |
-| [剑指 Offer 45. 把数组排成最小的数](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof) |                                                   |      |      |           |                                                |
-| [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram) |                                                   |      |      |           |                                                |
-| [315. 计算右侧小于当前元素的个数](https://leetcode-cn.com/problems/meeting-rooms) |                                                   |      |      |           |                                                |
-| [148. 排序链表](https://leetcode-cn.com/problems/sort-list)  |                                                   |      |      |           |                                                |
+| 题目                                                         | 题解                                                         | 难度 | 标签 | 时间      | 备注                                           |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---- | --------- | ---------------------------------------------- |
+| [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/) | [912. 排序数组](Note/Sort.md#912-排序数组)                   | 中等 |      | 2022-3-22 | 手撕快速排序<br />手撕堆排序<br />手撕归并排序 |
+| [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals) | [56. 合并区间](Note/Sort.md#56-合并区间)                     | 中等 |      | 2022-3-22 |                                                |
+| [面试题 17.14. 最小K个数](https://leetcode-cn.com/problems/smallest-k-lcci/) | [面试题 17.14. 最小K个数](Note/Sort.md#最小K个数)            | 中等 |      | 2022-3-22 |                                                |
+| [179. 最大数](https://leetcode-cn.com/problems/largest-number) | [179. 最大数](Note/Sort.md#179-最大数)                       | 中等 |      | 2022-3-22 |                                                |
+| [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors) | [75. 颜色分类](Note/Sort.md#75-颜色分类)                     | 中等 |      | 2022-3-22 |                                                |
+| [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays) | [349. 两个数组的交集](Note/Sort.md#349-两个数组的交集)       | 简单 |      | 2022-3-23 |                                                |
+| [剑指 Offer 45. 把数组排成最小的数](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof) | [剑指 Offer 45. 把数组排成最小的数](Note/Sort.md#45-把数组排成最小的数) | 中点 |      | 2022-3-23 |                                                |
+| [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram) | [242. 有效的字母异位词](Note/Sort.md#242-有效的字母异位词)   | 简单 |      | 2022-3-23 |                                                |
+| [315. 计算右侧小于当前元素的个数](https://leetcode-cn.com/problems/count-of-smaller-numbers-after-self/) | [315. 计算右侧小于当前元素的个数](Note/Sort.md#315-计算右侧小于当前元素的个数) | 困难 |      | 2022-3-24 |                                                |
+| [148. 排序链表](https://leetcode-cn.com/problems/sort-list)  | [148. 排序链表](Note/Sort.md#148-排序链表)                   | 中点 |      | 2022-3-24 |                                                |
 
 
 
